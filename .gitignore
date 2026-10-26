@@ -1,0 +1,14 @@
+node_modules/
+.venv/
+var/
+cdk.out/
+cdk.context.json
+.env
+.env.*
+!.env.example
+!.env.local.example
+!.env.runtime.example
+__pycache__/
+*.pyc
+twitter_combined.txt
+.DS_Store

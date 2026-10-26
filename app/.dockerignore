@@ -1,0 +1,11 @@
+node_modules
+.venv
+var
+cdk.out
+infra
+test
+reports
+.git
+.env
+
+.env.*

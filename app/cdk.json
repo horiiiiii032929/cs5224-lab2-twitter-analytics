@@ -1,0 +1,4 @@
+{
+  "app": "npx tsx infra/bin/app.ts",
+  "context": { "@aws-cdk/core:checkSecretUsage": true }
+}

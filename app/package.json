@@ -1,0 +1,38 @@
+{
+  "name": "cs5224-lab2-twitter-analytics",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node backend/server.mjs",
+    "analyze": ".venv/bin/python analysis/twitter_counts.py --input ../twitter_combined.txt --output var/results/manual --master 'local[2]'",
+    "audit": "python3 scripts/audit_dataset.py ../twitter_combined.txt --report reports/dataset-audit.json",
+    "test": "node --test test/*.test.mjs && tsx --test test/infra.test.ts",
+    "test:python": ".venv/bin/python -m unittest discover -s test -p 'test_*.py'",
+    "typecheck": "tsc --noEmit",
+    "cdk": "cdk",
+    "synth": "cdk synth",
+    "verify": ".venv/bin/python scripts/verify_results.py ../twitter_combined.txt var/results/manual",
+    "start:env": "node --env-file=.env.runtime backend/server.mjs",
+    "env:aws": "node scripts/create-aws-env.mjs",
+    "aws:run": "node scripts/aws-run.mjs run",
+    "aws:up": "node scripts/aws-run.mjs up",
+    "aws:down": "node scripts/aws-run.mjs down"
+  },
+  "dependencies": {
+    "@aws-sdk/client-emr": "^3.0.0",
+    "@aws-sdk/client-s3": "^3.0.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "aws-cdk": "^2.1000.0",
+    "aws-cdk-lib": "^2.200.0",
+    "constructs": "^10.4.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

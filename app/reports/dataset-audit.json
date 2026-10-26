@@ -1,0 +1,27 @@
+{
+  "file": "twitter_combined.txt",
+  "bytes": 44647787,
+  "sha256": "0246d0cae6b4b3c874c968e5caed5e08753a98ce36be2ddb861fce982afdf92c",
+  "totalLines": 2426143,
+  "validRows": 2426143,
+  "blankRows": 0,
+  "invalidRows": 0,
+  "invalidExamples": [],
+  "uniqueEdges": 1768149,
+  "duplicateRows": 657994,
+  "selfEdges": 14,
+  "selfEdgePolicy": "retain",
+  "users": 81306,
+  "totalFollowers": 1768149,
+  "totalFollowees": 1768149,
+  "requiredUsers": {
+    "214328887": {
+      "followers": 180,
+      "followees": 214
+    },
+    "107830991": {
+      "followers": 180,
+      "followees": 157
+    }
+  }
+}
