@@ -1,3 +1,3 @@
 # AI use declaration
 
-I used OpenAI Codex to help interpret the questions and lecture slides, draft the English answers, diagrams, frontend, backend, PySpark code, CDK, tests and deployment scripts, and prepare this report. I also used AI-assisted verification scripts to compare the reported counts against a separate set/count implementation. I include screenshots from an actual AWS run. I am responsible for the accuracy, integrity and final content of this submission.
+I used OpenAI Codex to help interpret the questions and lecture slides, prepare the answers and diagrams, develop the frontend, backend, PySpark code, CDK configuration, tests and deployment scripts, and produce this report. I also used AI-assisted verification scripts to compare the reported counts with a separate set/count implementation. I have included screenshots from the AWS run. I am responsible for the accuracy, integrity and final content of this submission.
