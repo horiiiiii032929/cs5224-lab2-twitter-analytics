@@ -29,6 +29,12 @@ See [app/README.md](app/README.md) for local Spark setup, credentials, permissio
 
 A pair `A B` means A follows B: one followee for A, one follower for B. Identical directed pairs count once; reversed pairs are distinct. IDs remain strings, zero counts are retained, malformed rows fail the job, and unique self-follows are retained.
 
+## Repository scope
+
+This public repository contains application source, dependency manifests, tests and small synthetic fixtures, deployment instructions, original editable diagrams, and the AI declaration. The aggregate dataset audit records counts and a checksum for reproducibility.
+
+Keep the assignment specification, lecture slides, course handouts, supplied dataset, submission PDF, report-generation files, raw AWS execution evidence, credentials, and generated build files outside this repository. The full PySpark source is also printed in the submitted PDF's reference appendix; the PDF itself is submitted through Canvas.
+
 ## AI assistance
 
 OpenAI Codex assisted with implementation, debugging, tests, diagrams and documentation. See [AI-DECLARATION.md](AI-DECLARATION.md). Verification scripts were also AI-assisted; cloud execution and independent result comparisons were performed.

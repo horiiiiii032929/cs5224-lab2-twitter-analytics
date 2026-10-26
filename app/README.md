@@ -1,6 +1,6 @@
 # CS5224 Lab 2 — Twitter Analytics
 
-A complete local/cloud implementation of Part 2. The same PySpark script runs locally with `local[2]` and on Amazon EMR with YARN. The browser calls Express APIs; Express submits analysis jobs and reads their results. AWS EMR execution was verified on 26 October 2026 (Asia/Singapore): all 81,306 users matched the independent reference, two executors processed tasks on both core workers, and the EMR cluster terminated successfully. The submission package contains evidence under `evidence/aws/`.
+A complete local/cloud implementation of Part 2. The same PySpark script runs locally with `local[2]` and on Amazon EMR with YARN. The browser calls Express APIs; Express submits analysis jobs and reads their results. Every displayed user, including the paginated list, uses the required two-line follower/followee sentence format. AWS EMR execution was verified on 26 October 2026 (Asia/Singapore): all 81,306 users matched the independent reference, two executors processed tasks on both core workers, and the EMR cluster terminated successfully. The submission package contains evidence under `evidence/aws/`.
 
 ## One-shot AWS run
 

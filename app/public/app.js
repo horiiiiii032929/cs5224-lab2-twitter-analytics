@@ -19,9 +19,9 @@ function card(row) {
 async function loadPage() {
   const data = await api(withJob(`/api/users?limit=25${cursors[page] ? `&cursor=${cursors[page]}` : ''}`));
   const rows = data.users.map(user => {
-    const tr = document.createElement('tr');
-    for (const value of [user.userId, number(user.followers), number(user.followees)]) { const td = document.createElement('td'); td.textContent = value; tr.append(td); }
-    return tr;
+    const item = card(user);
+    item.setAttribute('role', 'listitem');
+    return item;
   });
   $('users').replaceChildren(...rows); nextCursor = data.nextCursor;
   $('previous').disabled = page === 0; $('next').disabled = !nextCursor;

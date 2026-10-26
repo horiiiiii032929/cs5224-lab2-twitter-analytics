@@ -12,3 +12,14 @@ __pycache__/
 *.pyc
 twitter_combined.txt
 .DS_Store
+
+# Source-only repository: course documents and submission artifacts stay local.
+*.[pP][dD][fF]
+*.docx
+*.pptx
+*.zip
+/slides/
+/note/
+/submission/
+/evidence/
+/report-source/
